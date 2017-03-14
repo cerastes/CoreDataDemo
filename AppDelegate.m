@@ -102,24 +102,24 @@
     
     
 //    关系
-    Unite *kg = [NSEntityDescription insertNewObjectForEntityForName:@"Unite" inManagedObjectContext:[[self cdh ]context]];
-    Item *bananas = [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:[[self cdh ]context]];
-    Item *apple= [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:[[self cdh ]context]];
-    Item *orange = [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:[[self cdh ]context]];
-    kg.name = @"kg";
-    bananas.quantity = 1.;
-    apple.quantity = 2.;
-    orange.quantity = 3.;
-    bananas.listed = @YES;
-    apple.listed = @NO;
-    orange.listed = @YES;
-    bananas.name= @"ba";
-    apple.name = @"app";
-    orange.name = @"or";
-    bananas.unit= kg;
-    apple.unit= kg;
-    orange.unit= kg;
-    [self.cdh saveContext];
+//    Unite *kg = [NSEntityDescription insertNewObjectForEntityForName:@"Unite" inManagedObjectContext:[[self cdh ]context]];
+//    Item *bananas = [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:[[self cdh ]context]];
+//    Item *apple= [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:[[self cdh ]context]];
+//    Item *orange = [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:[[self cdh ]context]];
+//    kg.name = @"kg";
+//    bananas.quantity = 1.;
+//    apple.quantity = 2.;
+//    orange.quantity = 3.;
+//    bananas.listed = @YES;
+//    apple.listed = @NO;
+//    orange.listed = @YES;
+//    bananas.name= @"ba";
+//    apple.name = @"app";
+//    orange.name = @"or";
+//    bananas.unit= kg;
+//    apple.unit= kg;
+//    orange.unit= kg;
+//    [self.cdh saveContext];
     
     
 }
