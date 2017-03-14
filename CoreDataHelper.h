@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "ViewController.h"
 
 @interface CoreDataHelper : NSObject
+@property ViewController *viewController;
 @property (nonatomic,readonly) NSManagedObjectContext *context;
 @property (nonatomic,readonly) NSManagedObjectModel   *model;
 @property (nonatomic,readonly) NSPersistentStoreCoordinator *coordinator;

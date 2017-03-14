@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Item" representedClassName="Item" syncable="YES">
+        <attribute name="collected" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="listed" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="New Item" indexed="YES" syncable="YES"/>
+        <attribute name="photoData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Float" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="unit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Unite" inverseName="items" inverseEntity="Unite" syncable="YES"/>
+    </entity>
+    <entity name="Unite" representedClassName="Unite" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Item" inverseName="unit" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <fetchRequest name="Test" entity="Item" predicateString="name CONTAINS &quot;e&quot;"/>
+    <elements>
+        <element name="Item" positionX="3276" positionY="-1143" width="128" height="133"/>
+        <element name="Unite" positionX="3436" positionY="-1089" width="128" height="73"/>
+    </elements>
+</model>
